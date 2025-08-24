@@ -1,0 +1,1563 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta
+      name="description"
+      content="Explore as principais tecnologias Web Front-End como HTML5, CSS3, JavaScript, React, Angular, jQuery e AJAX. Veja exemplos práticos e compreenda os padrões modernos do desenvolvimento web."
+    />
+
+    <title>Tecnologias Web Front-End</title>
+    <link rel="stylesheet" href="assets/css/style.css" />
+    <!-- Tema CSS do Prism -->
+    <link
+      href="https://cdn.jsdelivr.net/npm/prismjs/themes/prism-okaidia.css"
+      rel="stylesheet"
+    />
+
+    <!-- Plugin de números de linha -->
+    <link
+      href="https://cdn.jsdelivr.net/npm/prismjs/plugins/line-numbers/prism-line-numbers.css"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <header>
+      <div class="logo">
+        <img
+          src="assets/images/programacao-front-end.png"
+          alt="icone representando programação front end"
+        />
+      </div>
+    </header>
+    <nav class="bar"></nav>
+    <main class="content">
+      <aside class="sidebar">
+        <h2 class="borderless">Algumas tecnologias Web Front-End</h2>
+        <ul>
+          <li><a href="#" onclick="mostrarSecao('react')">React</a></li>
+          <li><a href="#" onclick="mostrarSecao('xhtml')">XHTML</a></li>
+          <li><a href="#" onclick="mostrarSecao('html5')">HTML5</a></li>
+          <li><a href="#" onclick="mostrarSecao('css')">CSS</a></li>
+          <li>
+            <a href="#" onclick="mostrarSecao('javascript')">JavaScript</a>
+          </li>
+          <li><a href="#" onclick="mostrarSecao('ajax')">AJAX</a></li>
+          <li><a href="#" onclick="mostrarSecao('jquery')">jQuery</a></li>
+          <li><a href="#" onclick="mostrarSecao('angularjs')">AngularJS</a></li>
+          <li><a href="#" onclick="mostrarSecao('angular')">Angular</a></li>
+        </ul>
+      </aside>
+
+      <section class="main">
+        <!-- Conteúdo principal vai aqui -->
+
+        <!-- article react -->
+        <article id="react">
+          <h1 id="inicio">React (JavaScript)</h1>
+          <figure>
+            <img
+              src="assets/images/react-native-1.svg"
+              width="300"
+              alt="Logo do Framework React Native"
+            />
+          </figure>
+
+          <p>
+            O <strong>React</strong> (também denominado
+            <strong>React.js</strong> ou <strong>ReactJS</strong>) é uma
+            biblioteca front-end JavaScript de código aberto com foco em criar
+            interfaces de usuário em páginas web, criado em 2011 pelo Facebook,
+            com o objetivo de otimizar a atualização e a sincronização de
+            atividades simultâneas no feed de notícias da rede social e melhorar
+            a manutenção de código, com a criação de views declarativas e
+            componentes.
+          </p>
+
+          <p>
+            É mantido pelo Facebook, Instagram, outras empresas e uma comunidade
+            de desenvolvedores individuais. É utilizado nos sites da Netflix,
+            Imgur, Feedly, Airbnb, SeatGeek, HelloSign, Walmart e, outros.
+          </p>
+
+          <h2 id="jsx">JSX</h2>
+          <p>
+            O JSX (JavaScript XML) é uma extensão de sintaxe para JavaScript que
+            escrever a interface do usuário de forma semelhante ao HTML.[7]
+            Embora seu uso não seja obrigatório, a maioria dos desenvolvedores
+            usa para descrever como a UI deveria parecer. Essa abordagem
+            facilita a criação dos componentes da interface do usuário no React,
+            pois os componentes são definidos de forma declarativa deixando o
+            código legível e intuitivo. Exemplo:
+          </p>
+
+          <pre class="line-numbers"><code class="language-javascript">
+const name = 'Josh Perez';
+const element = &lt;h1&gt;Hello, {name}&lt;/h1&gt;;
+
+ReactDOM.render(
+  element,
+  document.getElementById('root')
+);
+</code></pre>
+
+          <h2 id="virtual-dom">Virtual DOM</h2>
+          <p>
+            É uma representação virtual da interface do usuário que é armazenada
+            em memória e mantida em sincronia com a DOM “real”. Dessa forma, o
+            React só altera na verdadeiro DOM apenas o que foi modificado.
+            Assim, é abstraída a manipulação de atributos, de eventos e
+            atualização manual do DOM.
+          </p>
+
+          <p>
+            >A Virtual DOM está associada aos elementos da biblioteca, que são
+            objetos representando a UI. Entretanto, o React também possui os
+            “fibers”, que são objetos internos que contém informações sobre a
+            árvore de componentes e podem ser considerados parte da Virtual DOM.
+          </p>
+        </article>
+
+        <!-- article XHTML ------------------->
+
+        <article id="xhtml">
+          <h1>XHTML</h1>
+          <p>
+            eXtensible Hypertext Markup Language (abreviado XHTML) é uma
+            reformulação da linguagem de marcação HTML, combinada com as regras
+            da linguagem de marcação XML (tags), uma recomendação do W3C de
+            janeiro de 2000,[1] sucessora do HTML 4.01, objetivando a melhoria
+            da exibição das páginas Web em diversos dispositivos (televisão,
+            palm, celular, etc), além da melhoraria da acessibilidade do
+            conteúdo.
+          </p>
+          <p>
+            O HTML é derivado da linguagem de marcação SGML (Standard
+            Generalized Markup Language) criado por Tim Berners Lee (idealizador
+            da WWW) para a exibição de documentos na Web. A evolução cronológica
+            das linguagens é a seguinte:[2]
+          </p>
+          <p>
+            SGML → HTML 1.0 → HTML xx → XML → HTML 4.01 → XHTML (padrões
+            internacionais da W3C, independentes de fabricantes de hardware ou
+            software, sancionados pelas organizações ANSI e ISO).[2]
+          </p>
+          <p>
+            A principal diferença entre XHTML e HTML, é que o primeiro é XML
+            válido, enquanto o segundo possui uma sintaxe própria, mas ambos
+            possuem sentido semântico. Para verificar se uma página foi
+            construída corretamente no padrão XHTML, existem diversos
+            validadores, como por exemplo: a W3C disponibiliza um validador
+            online.[3]
+          </p>
+          <p>
+            O tipo de sintaxe de uma página Web (tipo MIME) é definida no
+            cabeçalho HTTP com o códigoContent-Type: aplication/xhtml+xml,
+            seguido por
+          </p>
+
+          <h2 id="history">Histórico</h2>
+
+          <p>
+            Na época do lançamento da tecnologia, considerava-se o XHTML como
+            sendo o sucessor do HTML. Porém, está é uma recomendação separada; a
+            W3C continua a recomendar o uso de XHTML 1.1, XHTML 1.0, e HTML
+            4.01, para publicação na web, assim como o HTML5.
+          </p>
+
+          <h2 id="exemplos-xhtml">Exemplos</h2>
+
+          <p>
+            Um exemplo simples de XHTML (observando dentro das tags
+            &lt;html>&lt;/html>) seria:
+          </p>
+
+          <pre class="line-numbers"><code class="language-markup">
+&lt;?xml version="1.0" encoding="UTF-8"?&gt;
+&lt;!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN"
+  "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd"&gt;
+
+&lt;html lang="pt-BR" xml:lang="pt-BR" xmlns="http://www.w3.org/1999/xhtml"&gt;
+  &lt;head&gt;
+    &lt;meta name="viewport" content="width=device-width, initial-scale=1" /&gt;
+    &lt;title&gt;Título do Documento&lt;/title&gt;
+  &lt;/head&gt;
+  &lt;body&gt;
+    &lt;form action="." method="POST"&gt;
+      &lt;fieldset&gt;
+        &lt;legend&gt;Dados para cadastro&lt;/legend&gt;
+
+        &lt;label for="name-input"&gt;Nome:&lt;/label&gt;
+        &lt;input type="text" name="name" id="name-input" /&gt;
+
+        &lt;label for="birth-input"&gt;Data de nascimento:&lt;/label&gt;
+        &lt;input type="date" name="birth" id="birth-input" /&gt;
+
+        &lt;button&gt;Enviar&lt;/button&gt;
+      &lt;/fieldset&gt;
+    &lt;/form&gt;
+  &lt;/body&gt;
+&lt;/html&gt;
+</code></pre>
+
+          <p>O código CSS que formataria este código XHTML seria:</p>
+
+          <pre class="line-numbers"><code class="language-css">
+html {
+  color-scheme: light dark;
+}
+
+form {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+}
+
+fieldset {
+  display: flex;
+  flex-direction: column;
+}
+
+fieldset input:not(:last-child) {
+  margin-bottom: 12px;
+}
+</code></pre>
+
+          <h2 class="horizontal-rule borderless">Versões</h2>
+
+          <h2 id="xhtml1-0">XHTML 1.0</h2>
+          <p>
+            A Recomendação XHTML original da W3C, XHTML 1.0, foi simplesmente
+            uma reformulação do HTML 4.01 em XML. Existem três diferentes "DTDs"
+            de XHTML 1.0, cada qual com equivalência a uma versão em HTML 4.01.
+          </p>
+          <ul>
+            <li>
+              <strong>XHTML 1.0 Strict</strong> é o mesmo que HTML 4.01 Strict,
+              mas seguindo regras de sintaxe XML.
+            </li>
+            <p>Declaração da XHTML 1.0 Strict:</p>
+            <pre class="line-numbers"><code class="language-markup">
+  &lt;?xml version="1.0" encoding="UTF-8"?&gt;
+&lt;!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN"
+"http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd"&gt;
+
+&lt;html lang="pt-BR" xml:lang="pt-BR" xmlns="http://www.w3.org/1999/xhtml"&gt;
+  &lt;head&gt;
+    &lt;title&gt;Título do Documento&lt;/title&gt;
+  &lt;/head&gt;
+  &lt;body&gt;
+  &lt;/body&gt;
+&lt;/html&gt;
+</code>
+</pre>
+
+            <li>
+              <strong>XHTML 1.0 Transitional</strong> é o mesmo que HTML 4.01
+              Transitional, mas segue as regras de sintaxe XML. Ele suporta tudo
+              encontrado no XHTML 1.0 Strict, mas também permite o uso de vários
+              elementos e atributos que são julgados presencionais, para
+              facilitar a transição de HTML 3.2 e mais recentes. Isso inclui
+              <span>&lt;center&gt;</span>, &lt;u&gt;, &lt;strike&gt;, e
+              &lt;applet&gt;
+            </li>
+
+            <p>Declaração da XHTML 1.0 Frameset</p>
+
+            <pre class="line-numbers"><code class="language-markup">
+&lt;?xml version="1.0" encoding="UTF-8"?&gt;
+&lt;!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Frameset//EN"
+"http://www.w3.org/TR/xhtml1/DTD/xhtml1-frameset.dtd"&gt;
+
+&lt;html lang="pt-BR" xml:lang="pt-BR" xmlns="http://www.w3.org/1999/xhtml"&gt;
+  &lt;head&gt;
+    &lt;title&gt;Título do Documento&lt;/title&gt;
+  &lt;/head&gt;
+  &lt;frameset&gt;
+  &lt;/frameset&gt;
+&lt;/html&gt;
+</code></pre>
+          </ul>
+          <h2 id="xhtml1-1">XHTML 1.1</h2>
+          <p>
+            A mais recente Recomendação XHTML da W3C é o
+            <em>XHTML 1.1: Module-based XHTML</em>, que é uma reformulação do
+            XHTML 1.0 Strict, com pequenas modificações, usando alguns módulos
+            de um conjunto definido em Modularização de XHTML,[5] uma
+            Recomendação W3C que cria uma modularização de frames, um padrão de
+            módulos, e várias outras definições. Todas as ferramentas
+            depreciadas de HTML, como elementos presencionais e framesets, e até
+            mesmo os atributoslang e o atributo de âncorasname, que ainda eram
+            permitidos no XHTML 1.0 Strict, foram removidos desta versão. A
+            apresentação é controlada puramente pelas Folhas de Estilo em
+            Cascata (CSS). Esta versão também permite suporte à marcação rubi,
+            necessária para línguas do Extremo Oriente (especialmente CJK).
+          </p>
+
+          <p>
+            Além da Modularização de XHTML permitir pequenas ferramentas XHTML
+            serem reutilizadas por outras aplicações XML de uma maneira bem
+            definida, e que o XHTML seja estendido para alguns propósitos, XHTML
+            1.1 adiciona o conceito de um documento "estritamente conformado":
+            esses documentos definidos nos módulos requeridos para XHTML 1.1.
+            Por exemplo, se um documento é estendido para usar o módulo XHTML
+            Frames (frameset), ele também pode ser descrito como XHTML 1.1, mas
+            não estritamente conforme o XHTML 1.1. Ao invés disso, ele deve ser
+            descrito como um XHTML Host Language Conforming Document,[6] se a
+            ferramenta for relevante e necessária.
+          </p>
+
+          <p>
+            Em 2007, uma segunda edição do XHTML 1.1 está em desenvolvimento
+            pela W3C Working Draft.
+          </p>
+
+          <h2 id="esboco-xhtml">HTML5 (esboço)</h2>
+
+          <p>
+            Em 10 de abril de 2007, a Fundação Mozilla, Apple Inc. e Opera
+            Software propuseram que o novo grupo de trabalho HTML da W3C
+            adotasse o HTML5 do WHATWG como ponto de início de seu trabalho e,
+            nomeá-lo como "HTML5". Em 9 de Maio de 2007, o grupo de trabalho
+            HTML aceitou a proposta.[8] Em 22 de janeiro de 2008, o grupo
+            publicou HTML5 como um Working Draft.
+          </p>
+          <p>
+            O HTML5 traça uma serialização paralela do XML, chamada XHTML5.
+            Diferente do XHTML 2.0, este é compatível com XHTML 1.x.
+          </p>
+        </article>
+        <!-- article HTML5 ------------------->
+        <article id="html5">
+          <h1>HTML5</h1>
+          <figure>
+            <img
+              src="assets/images/HTML5_logo_and_wordmark.svg"
+              width="300"
+              alt="Logo do HTML5"
+            />
+          </figure>
+          <p>
+            <strong>HTML5</strong> (Hypertext Markup Language, versão 5) é uma
+            linguagem de marcação para a World Wide Web e é uma tecnologia chave
+            da Internet, originalmente proposto por Opera Software.[1] É a
+            quinta versão da linguagem HTML. Esta versão traz consigo
+            importantes mudanças quanto ao papel do HTML no mundo da Web,
+            através de novas funcionalidades como semântica e acessibilidade.
+            Possibilita o uso de recursos antes possíveis apenas com a aplicação
+            de outras tecnologias. Sua essência tem sido melhorar a linguagem
+            com o suporte para as mais recentes multimídias, enquanto a mantém
+            facilmente legível por seres humanos e consistentemente compreendida
+            por computadores e outros dispositivos (navegadores, parsers etc). O
+            HTML5 é o padrão atual para HTML, XHTML, e HTML DOM.
+          </p>
+          <p>
+            Após seus predecessores imediatos HTML 4.01 e XHTML 1.1, HTML5 é uma
+            resposta à observação de que o HTML e o XHTML, de uso comum na World
+            Wide Web, é uma mistura de características introduzidas por várias
+            especificações, juntamente com aquelas introduzidas por software,
+            tais como os navegadores, aqueles estabelecidos pela prática comum,
+            e os muitos erros de sintaxe em documentos existentes na web. É,
+            também, uma tentativa de definir uma única linguagem simples de
+            marcação que possa ser escrita em HTML ou em sintaxe XHTML. Isso
+            inclui modelos de processamento detalhados para incentivar
+            implementações mais interoperáveis; isso estende, melhora e
+            racionaliza a marcação disponível para documentos, e introduz
+            marcações e interfaces de programação de aplicações (APIs) para
+            aplicações web complexas. Pelas mesmas razões, HTML5 também é um
+            candidato em potencial aplicações multi-plataforma móveis. Muitos
+            recursos do HTML5 tem sido construídos com a consideração de ser
+            capaz de executar em dispositivos de baixa potência como smartphones
+            e tablets.
+          </p>
+
+          <p>
+            Em particular, HTML5 adiciona várias novas funções sintáticas. Elas
+            incluem as tags de &lt;video&gt;, &lt;audio&gt;, &lt;header&gt; e
+            elementos &lt;canvas&gt;, assim como a integração de conteúdos SVG
+            que substituem o uso de tags &lt;&gt;object genéricas. Estas funções
+            são projetadas para tornar mais fácil a inclusão e a manipulação de
+            conteúdo gráfico e multimídia na web sem ter de recorrer a plugins
+            proprietários e APIs. Outros novos elementos, como &lt;section&gt;,
+            &lt;article&gt;, &lt;header&gt; e &lt;nav&gt;, são projetados para
+            enriquecer o conteúdo semântico dos documentos. Novos atributos têm
+            sido introduzidos com o mesmo propósito, enquanto alguns elementos e
+            atributos têm sido removidos. Alguns elementos, como &lt;a&gt;,
+            &lt;cite&gt; e &lt;menu&gt; têm sido mudados, redefinidos ou
+            padronizados. As APIs e os modelos de objetos de documentos (DOM)
+            não são mais pensamentos retrógrados, mas são partes fundamentais da
+            especificação do HTML5. HTML5 também define com algum detalhe o
+            processamento necessário para que erros de sintaxe de documentos
+            inválidos sejam tratados uniformemente por todos os browsers e
+            outros agentes de usuários em conformidade com o HTML5.[
+          </p>
+
+          <h2 id="his-html5">História</h2>
+          <p>
+            O Web Hypertext Application Technology Working Group (WHATWG)
+            iniciou o trabalho do novo padrão HTML em 2004, quando o World Wide
+            Web Consortium (W3C) estava se concentrando no futuro
+            desenvolvimento do XHTML 2.0, e o HTML 4.01 não tinha sido
+            atualizado desde 2001. [4] Em 2009, o W3C decidiu que o Grupo de
+            Trabalho do XHTML 2.0 deveria parar seus trabalhos, e assim,
+            descontinuar o padrão. Desta forma o W3C e o WHATWG passaram a
+            trabalhar juntas no desenvolvimento do HTML5.
+          </p>
+          <p>
+            O projeto do HTML5 foi bem recebido pelos desenvolvedores Web até
+            então, e tornou-se tema na mídia em abril de 2010 [6][7] depois que
+            o CEO da Apple Inc., Steve Jobs emitiu uma carta pública intitulada
+            "Reflexões sobre o Adobe Flash", onde ele conclui que o
+            desenvolvimento do HTML5 tornaria o Adobe Flash desnecessário, tanto
+            para assistir vídeo ou mesmo exibir qualquer conteúdo web. Isso
+            provocou um debate entre os desenvolvedores Web, onde muitos
+            sugeriram que, enquanto o HTML5 proporcionasse uma melhor
+            funcionalidade, a variedade de browsers existentes exibiria páginas
+            diferentes, tendo um resultado diferente em cada navegador e não se
+            conseguiria de fato chegar a um padrão.[8] No início de novembro de
+            2011 a Adobe anunciou que iria interromper o desenvolvimento de
+            Flash para dispositivos móveis e redirecionar seus esforços para o
+            desenvolvimento de ferramentas utilizando HTML5.
+          </p>
+          <h2 id="descr-html5">Descrição</h2>
+          <p>
+            No início de 2008 o W3C – consórcio de empresas de tecnologia que
+            coordena os padrões da internet quanto a linguagem – anunciou a
+            primeira especificação do HTML5. O HTML, responsável por organizar e
+            formatar as páginas que visitamos na Internet, está em sua versão
+            4.0.1 e continua evoluindo. Após cinco anos de trabalho, desde 2008
+            está em fase de esboço, enquanto a versão final está prevista para
+            2014. Foram feitas grandes alterações, que incluem:
+          </p>
+
+          <ul>
+            <li>
+              Novas API’s, entre elas uma para desenvolvimento de gráficos
+              bidimensionais
+            </li>
+            <li>Controle embutido de conteúdo multimídia</li>
+            <li>Aprimoramento do uso offline</li>
+            <li>Melhoria na depuração de erros</li>
+          </ul>
+
+          <p>
+            Esta evolução da linguagem padrão para web pode eliminar a
+            necessidade de plug-ins para aplicações multimídia em navegadores.
+            Diversos críticos consideram a tecnologia como um forte concorrente
+            ao Flash, da Adobe, ao Silverlight, da Microsoft, e ao recente
+            JavaFX, da Sun (Oracle). Recentemente, Shantanu Narayen, diretor
+            executivo da Adobe, disse que o Flash não iria perder mercado, porém
+            a versão 5 do HTML já está sendo chamada de "Flash-killer"
+            (Assassino do Flash). Estas tecnologias precisarão se adaptar
+            rapidamente para conseguir manter-se no mercado, tão populares
+            quanto hoje. Na avaliação do co-diretor de ferramentas da Mozilla,
+            Ben Galbraith, as tecnologias viabilizadas pelo HTML5 como o Canvas
+            para desenhos 2D e o armazenamento de conteúdos no desktop,
+            permitirão que "usemos mais o browser do que nunca".
+          </p>
+          <p>
+            Após dez anos sem atualizações, como se escreve páginas na internet
+            passa por uma boa transformação. O HTML5 oferece uma experiência web
+            totalmente diferente para usuários e embora exista um longo caminho
+            para ser finalizado, muitos navegadores importantes, como Internet
+            Explorer 9, Opera, Safari 4, Firefox 3.6 e Chrome já implementaram
+            grandes partes da linguagem, incluindo tags de vídeo e suporte à
+            tecnologia Canvas. Com a evolução da linguagem, os navegadores
+            passam da categoria "mostradores" de páginas para um renderizador de
+            "web software".
+          </p>
+          <p>
+            Assim como surgiram as app stores para aplicações nativas, existem
+            appstores especificas para aplicações HTML5, os desenvolvedores
+            podem utilizar a audiência das appstores para distribuir seu
+            aplicativo e também fazer cobrança (as appstores oferecem
+            integrações para permitir a cobrança). Como, por exemplo, a Zeewe,
+            loja de apps HTML5 focada em smartphones.
+          </p>
+
+          <h2 id="exemplos-html5">Exemplos de código HTML5</h2>
+          <p>Códigos para testes de HTML5:</p>
+          <pre class="line-numbers"><code class="language-markup">
+&lt;!DOCTYPE html&gt;
+&lt;html lang="pt-BR"&gt;
+  &lt;head&gt;
+    &lt;meta charset="UTF-8"&gt;
+    &lt;title&gt;Teste de Página&lt;/title&gt;
+  &lt;/head&gt;
+  &lt;body&gt;
+    =====Teste de página&lt;/h5&gt;
+
+Um teste de página
+
+''Este texto está em itálico''
+
+  &lt;/body&gt;
+&lt;/html&gt;
+            </code>
+          </pre>
+          <p>
+            Código HTML5 para reproduzir áudio sem a necessidade de
+            <em>plug-ins:</em>
+          </p>
+          <pre
+            class="line-numbers"
+            aria-labelledby="exemplo-codigo"
+          ><code class="language-markup">
+&lt;!DOCTYPE html&gt;
+&lt;html lang="pt-BR"&gt;
+  &lt;head&gt;
+    &lt;meta charset="UTF-8"&gt;
+    &lt;title&gt;Áudio em HTML5&lt;/title&gt;
+  &lt;/head&gt;
+  &lt;body&gt;
+    &lt;audio controls autoplay&gt;
+      &lt;source src="audio.ogg"&gt;
+      &lt;!-- Mensagem explicando que o navegador não suporta áudio ou o formato usado. --&gt;
+
+Seu navegador não suporta áudio HTML5 ou o formato Opus.
+
+    &lt;/audio&gt;
+  &lt;/body&gt;
+&lt;/html&gt;            
+          </code> </pre>
+          <h2 id="tabela-novos-html5">Novos elementos do HTML5</h2>
+          <p>O HTML5 introduziu novos elementos:</p>
+
+          <table>
+            <thead>
+              <tr>
+                <th>Elemento</th>
+                <th>Definição</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td><code class="border-code">&lt;article&gt;</code></td>
+                <td>Define um artigo em um documento</td>
+              </tr>
+              <tr>
+                <td><code class="border-code">&lt;aside&gt;</code></td>
+                <td>Define um conteúdo, à parte, do conteúdo da página</td>
+              </tr>
+              <tr>
+                <td><code class="border-code">&lt;bdi&gt;</code></td>
+                <td>
+                  Define um texto que pode ser formatado em diferentes direções
+                </td>
+              </tr>
+              <tr>
+                <td><code class="border-code">&lt;details&gt;</code></td>
+                <td>
+                  Define detalhes adicionais que o usuário pode ver ou ocultar
+                </td>
+              </tr>
+              <tr>
+                <td><code class="border-code">&lt;dialog&gt;</code></td>
+                <td>Define uma caixa de diálogo ou janela</td>
+              </tr>
+              <tr>
+                <td><code class="border-code">&lt;figcaption&gt;</code></td>
+                <td>
+                  Define uma legenda para um elemento
+                  <code class="border-code">&lt;figure&gt;</code>
+                </td>
+              </tr>
+              <tr>
+                <td><code class="border-code">&lt;figure&gt;</code></td>
+                <td>
+                  Define um conteúdo como ilustrações, diagramas, fotos,
+                  códigos, listagens, etc.
+                </td>
+              </tr>
+              <tr>
+                <td><code class="border-code">&lt;footer&gt;</code></td>
+                <td>Define o rodapé do documento ou seção</td>
+              </tr>
+              <tr>
+                <td><code class="border-code">&lt;header&gt;</code></td>
+                <td>Define um cabeçalho para o documento ou uma seção</td>
+              </tr>
+              <tr>
+                <td><code class="border-code">&lt;main&gt;</code></td>
+                <td>Define o conteúdo principal de um documento</td>
+              </tr>
+              <tr>
+                <td><code class="border-code">&lt;mark&gt;</code></td>
+                <td>Define um texto marcado ou realçado</td>
+              </tr>
+              <tr>
+                <td><code class="border-code">&lt;menuitem&gt;</code></td>
+                <td>
+                  Define um comando/menu que pode ser usado para invocar um menu
+                  popup
+                </td>
+              </tr>
+              <tr>
+                <td><code class="border-code">&lt;meter&gt;</code></td>
+                <td>Define uma medida escalar dentro de uma faixa conhecida</td>
+              </tr>
+              <tr>
+                <td><code class="border-code">&lt;nav&gt;</code></td>
+                <td>Define links de navegação no documento</td>
+              </tr>
+              <tr>
+                <td><code class="border-code">&lt;progress&gt;</code></td>
+                <td>Define o progresso de uma tarefa</td>
+              </tr>
+              <tr>
+                <td><code class="border-code">&lt;rpr&gt;</code></td>
+                <td>
+                  Define o que exibir em navegadores que não exibem anotações
+                  ruby
+                </td>
+              </tr>
+              <tr>
+                <td><code class="border-code">&lt;rt&gt;</code></td>
+                <td>
+                  Define a pronúncia de um caractere (para tipografias do Leste
+                  Asiático)
+                </td>
+              </tr>
+              <tr>
+                <td><code class="border-code">&lt;ruby&gt;</code></td>
+                <td>
+                  Define uma anotação ruby (para tipografia do Leste Asiático)
+                </td>
+              </tr>
+              <tr>
+                <td><code class="border-code">&lt;section&gt;</code></td>
+                <td>Define uma seção no documento</td>
+              </tr>
+              <tr>
+                <td><code class="border-code">&lt;summary&gt;</code></td>
+                <td>
+                  Define um título visível para um elemento
+                  <code class="border-code">&lt;details&gt;</code>
+                </td>
+              </tr>
+              <tr>
+                <td><code class="border-code">&lt;time&gt;</code></td>
+                <td>Define uma data/hora</td>
+              </tr>
+              <tr>
+                <td><code class="border-code">&lt;wbr&gt;</code></td>
+                <td>Define uma possível quebra de linha</td>
+              </tr>
+              <tr>
+                <td><code class="border-code">&lt;datalist&gt;</code></td>
+                <td>
+                  Lista opções predefinidas para controles
+                  <code class="border-code">&lt;input&gt;</code>
+                </td>
+              </tr>
+              <tr>
+                <td><code class="border-code">&lt;keygen&gt;</code></td>
+                <td>
+                  Define um campo de gerador de par de chaves (para formulários)
+                </td>
+              </tr>
+              <tr>
+                <td><code class="border-code">&lt;output&gt;</code></td>
+                <td>Define o resultado de um cálculo</td>
+              </tr>
+              <tr>
+                <td><code class="border-code">&lt;script&gt;</code></td>
+                <td>Define um conteúdo de script usando JavaScript</td>
+              </tr>
+              <tr>
+                <td><code class="border-code">&lt;svg&gt;</code></td>
+                <td>Define um desenho gráfico usando SVG</td>
+              </tr>
+              <tr>
+                <td><code class="border-code">&lt;audio&gt;</code></td>
+                <td>Define um conteúdo de som ou música</td>
+              </tr>
+              <tr>
+                <td><code class="border-code">&lt;embed&gt;</code></td>
+                <td>
+                  Define um contêiner para aplicações externas (como plug-ins)
+                </td>
+              </tr>
+              <tr>
+                <td><code class="border-code">&lt;source&gt;</code></td>
+                <td>
+                  Define fonte para
+                  <code class="border-code">&lt;video&gt;</code> e
+                  <code class="border-code">&lt;audio&gt;</code>
+                </td>
+              </tr>
+              <tr>
+                <td><code class="border-code">&lt;video&gt;</code></td>
+                <td>Define conteúdo de vídeo ou filme</td>
+              </tr>
+            </tbody>
+          </table>
+        </article>
+
+        <article id="css">
+          <h1 class="title-cursive">Cascading Style Sheets</h1>
+
+          <p>
+            Cascading Style Sheets (abreviado CSS) é um mecanismo para adicionar
+            estilos (cores, fontes, espaçamento, etc.) a uma página web,[1]
+            aplicado diretamente nas tags HTML ou ficar contido dentro das tags
+            &lt;style&gt;. Também é possível, adicionar estilos adicionando um
+            link para um arquivo CSS que contém os estilos. Assim, quando se
+            quiser alterar a aparência dos documentos vinculados a este arquivo
+            CSS, basta modifica-lo.
+          </p>
+
+          <p>
+            Com a variação de atualizações dos navegadores, o suporte ao CSS
+            pode variar. A interpretação dos navegadores pode ser avaliada com o
+            teste Acid2, que se tornou uma forma base de revelar quão eficiente
+            é o suporte de CSS, fazendo com que a nova versão em desenvolvimento
+            do Firefox seja totalmente compatível a ele, assim como o Opera já
+            é. O Doctype informado, ou a ausência dele, determina o quirks mode
+            ou o strict mode, modificando o modo como o CSS é interpretado e a
+            página desenhada.
+          </p>
+
+          <h2 id="sintaxe-css">Sintaxe</h2>
+          <p>
+            CSS tem uma sintaxe simples, e utiliza uma série de palavras em
+            inglês para especificar os nomes de diferentes propriedade de estilo
+            de uma página.
+          </p>
+          <p>
+            Uma instrução CSS consiste em um seletor e um bloco de declaração.
+            Cada declaração contém uma propriedade e um valor, separados por
+            dois pontos (<span class="border-code">:</span>). Cada declaração é
+            separada por ponto e vírgula (<span class="border-code">;</span>).
+          </p>
+
+          <p>
+            Em CSS, seletores são usados para declarar a quais elementos de
+            marcação um estilo se aplica, uma espécie de expressão
+            correspondente. Os seletores podem ser aplicados a todos os
+            elementos de um tipo específico, ou apenas aqueles elementos que
+            correspondam a um determinado atributo; elementos podem ser
+            combinados, dependendo de como eles são colocados em relação uns aos
+            outros no código de marcação, ou como eles estão aninhados dentro do
+            objeto de documento modelo.
+          </p>
+
+          <p>
+            Pseudoclasse é outra forma de especificação usada em CSS para
+            identificar os elementos de marcação, e, em alguns casos, ações
+            específicas de usuário para o qual um bloco de declaração especial
+            se aplica. Um exemplo frequentemente utilizado é o
+            <span class="border-code">:hover</span> pseudoclasse que se aplica
+            um estilo apenas quando o usuário 'aponta para' o elemento visível,
+            normalmente, mantendo o cursor do mouse sobre ele. Isto é anexado a
+            um seletor como em a:hover ou #elementid:hover. Outras pseudoclasses
+            e pseudoelementos são, p. ex.,
+            <span class="border-code">:first-line</span>,
+            <span class="border-code">:visited</span> ou
+            <span class="border-code">:before</span>. Uma pseudoclasse especial
+            é <span class="border-code">:lang</span>(c), "c".
+          </p>
+
+          <p>
+            Uma pseudoclasse seleciona elementos inteiros, tais como :link ou
+            :visited, considerando que um pseudoelemento faz uma seleção que
+            pode ser constituída por elementos parciais, tais como :first-line
+            ou :first-letter.
+          </p>
+
+          <p>
+            Seletores podem ser combinados de outras formas também,
+            especialmente em CSS 2.1, para alcançar uma maior especificidade e
+            flexibilidade.
+          </p>
+
+          <p>Aqui está um exemplo que resume as regras acima:</p>
+
+          <pre class="line-numbers"><code class="language-css">
+selector [, selector2, ...][:pseudo-class] {
+  property: value;
+ [property2: value2;
+  ...]
+}
+/* comment */
+          </code></pre>
+          <h2 id="seletores-css">Seletores</h2>
+
+          <p>
+            Definição de estilo é um conjunto de propriedades visuais para um
+            elemento, o CSS define regras que fazem as definições de estilo
+            casarem com um elemento ou grupo de elemento, o documento pode
+            conter um bloco de CSS num elemento style ou usando o elemento link
+            apontando para um arquivo externo que contenha o bloco CSS.
+          </p>
+
+          <p>
+            Para uso com o CSS, foi criado o atributo class que todo elemento
+            pode conter.
+          </p>
+
+          <p>
+            As regras de casamento para o CSS são chamadas de seletores, uma
+            definição de estilo pode ser casada com um seletor ou um grupo de
+            seletores separados por vírgula, um seletor pode casar um elemento
+            por:
+          </p>
+          <ul>
+            <li>elemento do tipo : element_name { style definition; }</li>
+            <li>
+              elemento do tipo com a classe : element_name.class_name { style
+              definition; }
+            </li>
+            <li>
+              todos os elementos com a classe : .class_name { style definition;
+              }
+            </li>
+            <li>o elemento com o id : #id_of_element { style definition; }</li>
+            <li>
+              casamento de um grupo : element_name_01, element_name_02,
+              .class_name { style definition; }
+            </li>
+          </ul>
+          <p><strong>Exemplos</strong></p>
+          <pre class="line-numbers"><code class="language-css">
+p {text-align: right; color: #BA2;}
+p.minhaclasse01 { color:#ABC; }
+.minhaclasse02 { color:#CAD; }
+# iddomeuelemento { color:#ACD; }
+p.minhaclasse03 .minhaclasse04 { color:#ACD; }
+          </code></pre>
+          <h2 class="horizontal-rule borderless">Padronização</h2>
+          <h3 id="framework-css">Frameworks</h3>
+          Os frameworks CSS são bibliotecas pré-preparadas destinadas a permitir
+          um estilo mais fácil e mais compatível com os padrões de páginas da
+          web usando a linguagem Cascading Style Sheets. Os frameworks CSS
+          incluem Blueprint, Bootstrap, Cascade Framework, Foundation e
+          Materialize. Assim como as bibliotecas de linguagem de programação e
+          script, os frameworks CSS são geralmente incorporados como planilhas
+          .css externas referenciadas no HTML &lt;head&gt;. Eles fornecem uma
+          série de opções prontas para projetar e fazer o layout da página da
+          web. Embora muitos desses frameworks tenham sido publicados, alguns
+          autores os usam principalmente para prototipagem rápida, ou para
+          aprender com, e preferem 'criar' CSS apropriado para cada site
+          publicado sem a sobrecarga de design, manutenção e download de muitos
+          recursos não utilizados no estilo do site
+
+          <h3 id="met-desig-css">Metodologias de design</h3>
+
+          <p>
+            Conforme o tamanho dos recursos CSS usados em um projeto aumenta,
+            uma equipe de desenvolvimento geralmente precisa decidir sobre uma
+            metodologia de design comum para mantê-los organizados. Os objetivos
+            são facilidade de desenvolvimento, facilidade de colaboração durante
+            o desenvolvimento e desempenho das folhas de estilo implementadas no
+            navegador. As metodologias populares incluem OOCSS (CSS orientado a
+            objeto), ACSS (CSS atômico), oCSS (folha de estilo em cascata
+            orgânica), SMACSS (arquitetura escalável e modular para CSS) e BEM
+            (bloco, elemento, modificador)
+          </p>
+        </article>
+        <!-- article JavaScript -->
+        <article id="javascript">
+          <h1 class="title-cursive">JavaScript</h1>
+          <figure>
+            <img
+              src="assets/images/Unofficial_JavaScript_logo_2.svg"
+              width="300"
+              alt="Logo da linguagem de programação JavaScript"
+            />
+          </figure>
+
+          <p>
+            JavaScript (frequentemente abreviado como JS) é uma linguagem de
+            programação interpretada estruturada, de script em alto nível com
+            tipagem dinâmica fraca e multiparadigma (protótipos, orientado a
+            objeto, imperativo e funcional).[2][3] Juntamente com HTML e CSS, o
+            JavaScript é uma das três principais tecnologias da World Wide Web.
+            JavaScript permite páginas da Web interativas e, portanto, é uma
+            parte essencial dos aplicativos da web. A grande maioria dos sites
+            usa, e todos os principais navegadores têm um mecanismo JavaScript
+            dedicado para executá-lo.[4] É atualmente a principal linguagem para
+            programação client-side em navegadores web. É também bastante
+            utilizada do lado do servidor através de ambientes como o node.js.
+          </p>
+
+          <p>
+            Como uma linguagem multiparadigma, o JavaScript suporta estilos de
+            programação orientados a eventos, funcionais e imperativos
+            (incluindo orientado a objetos e prototype-based), apresentando
+            recursos como fechamentos (closures) e funções de alta ordem
+            comumente indisponíveis em linguagens populares como Java e C++.
+            Possui APIs para trabalhar com texto, matrizes, datas, expressões
+            regulares e o DOM, mas a linguagem em si não inclui nenhuma E/S,
+            como instalações de rede, armazenamento ou gráficos, contando com
+            isso no ambiente host em que está embutido.
+          </p>
+
+          <p>
+            Foi originalmente implementada como parte dos navegadores web para
+            que scripts pudessem ser executados do lado do cliente e
+            interagissem com o usuário sem a necessidade deste script passar
+            pelo servidor, controlando o navegador, realizando comunicação
+            assíncrona e alterando o conteúdo do documento exibido, porém os
+            mecanismos JavaScript agora estão incorporados em muitos outros
+            tipos de software host, incluindo em servidores e bancos de dados da
+            Web e em programas que não são da Web, como processadores de texto e
+            PDF, e em tempo de execução ambientes que disponibilizam JavaScript
+            para escrever aplicativos móveis e de desktop, incluindo widgets de
+            área de trabalho.
+          </p>
+
+          <p>
+            Os termos Vanilla JavaScript e Vanilla JS referem-se ao JavaScript
+            não estendido por qualquer estrutura ou biblioteca adicional.
+            Scripts escritos em Vanilla JS são códigos JavaScript simples.
+          </p>
+
+          <p>
+            Embora existam semelhanças entre JavaScript e Java, incluindo o nome
+            da linguagem, a sintaxe e as respectivas bibliotecas padrão, as duas
+            linguagens são distintas e diferem muito no design; JavaScript foi
+            influenciado por linguagens de programação como Self e Scheme.
+          </p>
+
+          <p>
+            É baseada em ECMAScript, padronizada pela Ecma international nas
+            especificações ECMA-262[8] e ISO/IEC 16262
+          </p>
+
+          <h2 class="horizontal-rule borderless">História</h2>
+          <h3 id="netscape-js">Início no Netscape</h3>
+          <p>
+            Em 1993, o Centro Nacional de Aplicações de Supercomputação (NCSA),
+            uma unidade da Universidade de Illinois em Urbana-Champaign, lançou
+            o NCSA Mosaic, o primeiro navegador gráfico popular da Web, que
+            desempenhou um papel importante na expansão do crescimento da
+            nascente World Wide Web além do nicho NeXTSTEP onde a World Wide Web
+            havia se formado três anos antes. Em 1994, uma empresa chamada
+            Mosaic Communications foi fundada em Mountain View, na Califórnia, e
+            empregou muitos dos autores originais do NCSA Mosaic para criar o
+            Mosaic Netscape. No entanto, não compartilhou intencionalmente
+            nenhum código com o NCSA Mosaic. O codinome interno do navegador da
+            empresa era Mozilla, uma junção de "Mosaic and Godzilla". A primeira
+            versão do navegador da Web, Mosaic Netscape 0.9, foi lançada no
+            final de 1994. Em quatro meses, já havia conquistado três quartos do
+            mercado de navegadores e se tornado o principal navegador da Web nos
+            anos 90. Para evitar problemas de propriedade de marca registrada
+            com o NCSA, o navegador foi posteriormente renomeado para Netscape
+            Navigator no mesmo ano, e a empresa assumiu o nome de Netscape
+            Communications. A Netscape Communications percebeu que a Web
+            precisava se tornar mais dinâmica. Marc Andreessen, o fundador da
+            empresa, acreditava que o HTML precisava de uma "linguagem de cola"
+            que fosse fácil de usar por Web designers e programadores de meio
+            período para montar componentes como imagens e plugins, onde o
+            código poderia ser escrito diretamente na Web.
+          </p>
+
+          <p>
+            Em 1995, a Netscape Communications recrutou Brendan Eich com o
+            objetivo de incorporar a linguagem de programação Scheme em seu
+            Netscape Navigator.[10] Antes que ele pudesse começar, a Netscape
+            Communications colaborou com a Sun Microsystems para incluir na
+            linguagem de programação mais estática do Netscape Navigator Sun,
+            Java, a fim de competir com a Microsoft pela adoção de tecnologias e
+            plataformas da Web.[11] A Netscape Communications decidiu então que
+            a linguagem de script que eles queriam criar complementaria o Java e
+            deveria ter uma sintaxe semelhante, o que excluía a adoção de outras
+            linguagens como Perl, Python, TCL ou Scheme. Para defender a ideia
+            do JavaScript contra propostas concorrentes, a empresa precisava de
+            um protótipo. Eich escreveu um em 10 dias, em maio de 1995.
+          </p>
+
+          <p>
+            Embora tenha sido desenvolvido sob o nome Mocha, a linguagem foi
+            oficialmente chamada de LiveScript quando foi lançada em versões
+            beta do Netscape Navigator 2.0 em setembro de 1995, mas foi
+            renomeada para JavaScript[12] quando foi lançada no Netscape
+            Navigator 2.0 beta 3 Dezembro.[13] A escolha final do nome causou
+            confusão, dando a impressão de que a linguagem era uma derivação da
+            linguagem de programação Java, e a escolha foi caracterizada como
+            uma manobra de marketing da Netscape para dar ao JavaScript o status
+            da linguagem da moda, o Java.
+          </p>
+
+          <p>
+            Há um equívoco comum de que o JavaScript foi influenciado por uma
+            linguagem de script de página da Web desenvolvida pelo Nombas
+            chamada Cmm (não confundir com o C posteriormente - criado em
+            1997).[14] Brendan Eich, no entanto, nunca tinha ouvido falar de Cmm
+            antes de criar o LiveScript.[15] Os Nombas lançaram seus scripts de
+            página da Web incorporados no Netscape, embora o script de página da
+            Web não fosse um conceito novo, conforme mostrado pelo navegador da
+            Web ViolaWWW. Nombas mais tarde passou a oferecer JavaScript em vez
+            de Cmm em seu produto ScriptEase e fazia parte do grupo TC39 que
+            padronizava o ECMAScript
+          </p>
+
+          <h3 id="js-back-end">JavaScript Back-end</h3>
+
+          <p>
+            Em dezembro de 1995, logo depois de lançar o JavaScript para
+            navegadores, a Netscape introduziu uma implementação da linguagem
+            para scripting server-side com o Netscape Enterprise Server.
+          </p>
+
+          <p>
+            Desde 1996, o servidor da Web do IIS tem suportado a implementação
+            do JavaScript — JScript do lado do servidor — em páginas ASP e .NET.
+          </p>
+
+          <p>
+            Desde meados da década de 2000, foram introduzidas implementações
+            adicionais de JavaScript no lado do servidor, como o Node.js em
+            2009.
+          </p>
+
+          <p>
+            O TypeScript é uma linguagem de programação que adiciona tipagem ao
+            JavaScript, sendo popular para uso no back-end.
+          </p>
+
+          <h3 id="adocao-micro-js">Adoção pela Microsoft</h3>
+
+          <p>
+            As tecnologias de script da Microsoft, incluindo VBScript e JScript,
+            foram lançadas em 1996. JScript, uma implementação de engenharia
+            reversa do JavaScript da Netscape, fazia parte do Internet Explorer
+            3. O JScript também estava disponível para scripts do servidor no
+            Internet Information Server. O Internet Explorer 3 também incluiu o
+            primeiro suporte da Microsoft para CSS e várias extensões para HTML,
+            mas em cada caso a implementação era visivelmente diferente daquela
+            encontrada no Netscape Navigator na época.[21] Essas diferenças
+            tornaram difícil para os designers e programadores fazerem um único
+            site funcionar bem em ambos os navegadores, levando ao uso dos
+            logotipos "melhor visualizado no Netscape" e "melhor visualizado no
+            Internet Explorer" que caracterizaram esses primeiros anos de
+            guerras de navegadores. O JavaScript começou a adquirir a reputação
+            de ser um dos obstáculos a uma Web de plataforma cruzada e baseada
+            em padrões. Alguns desenvolvedores assumiram a difícil tarefa de
+            tentar fazer com que seus sites funcionassem em ambos os principais
+            navegadores, mas muitos não podiam arcar com o tempo.[21] Com o
+            lançamento do Internet Explorer 4, a Microsoft introduziu o conceito
+            de HTML Dinâmico, mas as diferenças nas implementações de linguagem
+            e nos diferentes e proprietários Modelos de Objeto de Documento
+            permaneceram e foram obstáculos à adoção generalizada de JavaScript
+            na Web.
+          </p>
+
+          <h3 id="padrinizacao-js">Padronização</h3>
+
+          <p>
+            Em novembro de 1996, a Netscape submeteu o JavaScript à ECMA
+            International para criar uma especificação padrão, que outros
+            fornecedores de navegador poderiam implementar com base no trabalho
+            feito na Netscape. Isso levou ao lançamento oficial da especificação
+            de linguagem ECMAScript publicada na primeira edição da norma
+            ECMA-262 em junho de 1997, sendo o JavaScript a mais conhecida das
+            implementações. ActionScript e JScript eram outras implementações
+            bem conhecidas do ECMAScript.
+          </p>
+
+          <p>
+            O lançamento do ECMAScript 2 em junho de 1998 deu continuidade ao
+            ciclo de processo de padrões, conforme algumas modificações do
+            padrão internacional ISO / IEC 16262. ECMAScript 3 foi lançado em
+            dezembro de 1999 e é a linha de base moderna para JavaScript. O
+            trabalho original do ECMAScript 4 liderado por Waldemar Horwat
+            (então na Netscape, agora no Google) começou em 2000. A Microsoft
+            inicialmente participou e implementou algumas propostas em sua
+            linguagem JScript .NET.
+          </p>
+
+          <h3 id="des-poste-js">Desenvolvimentos posteriores</h3>
+          <p>
+            JavaScript tornou-se uma das linguagens de programação mais
+            populares da web. No entanto, muitos programadores profissionais
+            inicialmente desacreditaram a linguagem devido ao público-alvo
+            percebido de autores da Web e outros "amadores".[22] O advento do
+            Ajax devolveu o JavaScript aos holofotes e atraiu mais atenção da
+            programação profissional. O resultado foi a proliferação de
+            estruturas e bibliotecas abrangentes, práticas de programação
+            JavaScript aprimoradas e aumento do uso de JavaScript fora dos
+            navegadores da Web, conforme observado pela proliferação de
+            plataformas JavaScript do lado do servidor.
+          </p>
+
+          <p>
+            Em janeiro de 2009, o projeto CommonJS foi fundado com o objetivo de
+            especificar uma biblioteca padrão comum principalmente para o
+            desenvolvimento de JavaScript fora do navegador.
+          </p>
+
+          <p>
+            Com o surgimento de aplicativos de página única e sites pesados em
+            JavaScript, ele está sendo cada vez mais usado como um alvo de
+            compilação para compiladores de origem para origem de linguagens
+            dinâmicas e estáticas.
+          </p>
+
+          <h2>Baseada em protótipos</h2>
+          <h3 id="proto-js">Protótipos</h3>
+          <p>
+            JavaScript usa protótipos em vez de classes para o mecanismo de
+            herança. É possível simular muitas características de orientação a
+            objetos baseada em classes com protótipos.
+          </p>
+          <pre class="line-numbers"><code class="language-javascript">
+function calcIdade(b) {
+  var hoje = new Date();
+  var a = hoje.getFullYear();
+  var idade = a - b;
+          </code></pre>
+          <pre class="line-numbers"><code class="language-javascript">
+  return idade;
+}
+          </code></pre>
+
+          <h3 id="fun-met-js">Funções e métodos</h3>
+          <p>
+            Diferente de muitas linguagens orientadas a objetos, não há
+            distinção entre a definição de uma função e a definição de um método
+            no JavaScript. A distinção ocorre durante a chamada da função; a
+            função pode ser chamada como um método. Quando uma função é chamada
+            como método de um objeto, a keyword this da função é associada
+            àquele objeto via tal invocação.
+          </p>
+        </article>
+
+        <!-- article AJAX -->
+        <article id="ajax">
+          <h1>Ajax (programação)</h1>
+          <p>
+            <strong>Ajax</strong> (acrônimo em língua inglesa de
+            <em>Asynchronous Javascript and XML</em>, em português "Javascript
+            Assíncrono e XML") é um padrão de programação que faz uso de
+            tecnologias como Javascript e XML, providas por navegadores, para
+            tornar páginas Web mais interativas com o usuário, utilizando-se de
+            solicitações assíncronas de informações.
+          </p>
+
+          <p>
+            Utilizando Ajax, os aplicativos web podem enviar e recuperar dados
+            de um servidor de forma assíncrona (em segundo plano) sem interferir
+            na exibição e no comportamento da página existente, desacoplando a
+            camada de intercâmbio de dados da camada de apresentação desses
+            dados.
+          </p>
+
+          <p>
+            Foi inicialmente desenvolvida por Jessé James Garret e mais tarde
+            por diversas associações. Apesar do nome, a utilização de XML não é
+            obrigatória, sendo que, atualmente, JSON é mais utilizado do que o
+            XML devido às suas vantagens, em especial, por ser mais leve em
+            termos de uso de recursos. Além disso, as solicitações também não
+            necessitam ser assíncronas.
+          </p>
+
+          <p>
+            O objeto <code>XMLHttpRequest</code> (XHR) tem um papel importante
+            na técnica de desenvolvimento web Ajax para se comunicar com os
+            scripts do lado do servidor. Mais recentemente foi lançada a
+            <strong>Fetch API</strong>, que possui funcionalidade semelhante ao
+            XHR, porém com linguagem em mais alto nível.
+          </p>
+
+          <h2 id="fun-ajax">Funcionalidades do Ajax</h2>
+
+          <p>
+            Uma das características mais importantes do Ajax é a capacidade de
+            realizar requisições assíncronas. Isso significa que o aplicativo
+            Javascript pode interagir com o servidor de forma assíncrona,
+            permitindo que o usuário continue navegando na página, clicando em
+            botões ou preenchendo formulários, enquanto a solicitação é
+            processada.
+          </p>
+
+          <p>
+            No Ajax, a tradicional troca de requisições e respostas ainda
+            ocorre, mas de maneira mais dinâmica, sem a necessidade de
+            recarregar a página inteira. Apenas uma parte específica da página é
+            carregada, proporcionando uma experiência mais fluida.
+          </p>
+
+          <p>As três principais características do Ajax são:</p>
+          <ul>
+            <li>
+              Aplicativos assíncronos, como o Ajax, fazem requisições usando
+              objetos Javascript, sem enviar formulários completos.
+            </li>
+            <li>
+              O navegador web processa as requisições e respostas, reduzindo a
+              carga no código Javascript.
+            </li>
+            <li>
+              Quando o navegador recebe a resposta do servidor, ele chama o
+              código Javascript para processar os dados.
+            </li>
+          </ul>
+        </article>
+
+        <!-- article jquery -->
+        <article id="jquery">
+          <h1>jQuery</h1>
+          <p>
+            <strong>jQuery</strong> é uma biblioteca livre que contém funções da
+            linguagem de programação JavaScript que interage com páginas em
+            HTML, desenvolvida para simplificar os scripts
+            executados/interpretados no navegador de internet do usuário
+            (<em>client-side</em>).
+          </p>
+          <p>
+            A biblioteca é um projeto da <strong>Fundação JS</strong>, que faz
+            parte da <strong>Fundação Linux</strong>, e seu desenvolvimento é
+            realizado pelo <strong>time jQuery</strong>.
+          </p>
+          <p>
+            jQuery é uma biblioteca de código aberto baseada na
+            <strong>licença MIT</strong>. Possui sintaxe que simplifica: a
+            navegação do documento HTML, a seleção de elementos DOM, criar
+            animações, manipular eventos, desenvolver aplicações AJAX e criar
+            plugins sobre ela.
+          </p>
+          <p>
+            Tais facilidades permitem a criação de camadas de abstração para
+            interações de baixo nível, de modo simplificado, em aplicações web
+            dinâmicas e complexas.
+          </p>
+          <p>
+            jQuery é usada por cerca de <strong>74.4%</strong> dos 10 mil sites
+            mais visitados do mundo, sendo considerada uma das bibliotecas mais
+            populares do JavaScript.
+          </p>
+
+          <h2 id="hist-jquery">História</h2>
+          <p>
+            Em agosto de 2005, inspirado pela biblioteca JavaScript
+            <strong>Behaviour.js</strong> de Ben Nolan,
+            <strong>John Resig</strong> começou a criar a sintaxe do jQuery.
+          </p>
+          <blockquote>
+            "A premissa para o módulo é a seguinte: Usando o poder dos Seletores
+            do Pseudo-CSS, vincule suas funções Javascript a vários elementos
+            HTML no DOM." — John Resig, 22 de agosto de 2005
+          </blockquote>
+          <p>
+            O jQuery foi lançado oficialmente em
+            <strong>14 de janeiro de 2006</strong> no BarCamp, em Nova York.
+          </p>
+          <p>
+            Em 2008, a <strong>Microsoft</strong> e a
+            <strong>Nokia</strong> anunciaram suporte oficial ao jQuery. Ele
+            passou a ser usado em plataformas como Visual Studio, ASP.NET AJAX,
+            Web Run-Time e também no <strong>MediaWiki</strong> (desde a versão
+            1.16).
+          </p>
+          <p>
+            Em 20 de janeiro de 2018, foram lançadas as versões
+            <strong>1.12.4</strong> e <strong>2.2.4</strong>.
+          </p>
+
+          <h2 id="fun-jquery">Funcionalidades</h2>
+          <p>
+            jQuery é uma biblioteca de código aberto sob a licença MIT. Sua
+            sintaxe torna mais simples diversas tarefas:
+          </p>
+          <ul>
+            <li>Resolução da incompatibilidade entre navegadores</li>
+            <li>Redução de código</li>
+            <li>Reutilização de código por meio de plugins</li>
+            <li>Uso de uma vasta quantidade de plugins da comunidade</li>
+            <li>Trabalho facilitado com AJAX e DOM</li>
+            <li>Implementação de recursos CSS1, CSS2 e CSS3</li>
+          </ul>
+          <p>
+            Qualquer editor de código suporta jQuery, bastando incluir o arquivo
+            da biblioteca. Uma das maiores vantagens é resolver problemas de
+            compatibilidade, especialmente com versões antigas do Internet
+            Explorer.
+          </p>
+
+          <h2 id="exemplos-jquery">Exemplos</h2>
+
+          <h3>Exemplo 1: Atribuir valor a um campo</h3>
+          <p><strong>JavaScript puro:</strong></p>
+          <pre><code>document.getElementById('Teste').value = 5;</code></pre>
+
+          <p><strong>Com jQuery:</strong></p>
+          <pre><code>$('#Teste').val(5);</code></pre>
+
+          <h3>Exemplo 2: Pintar o fundo de um elemento</h3>
+          <p><strong>JavaScript puro:</strong></p>
+          <pre><code>document.getElementById('Teste2').style.background = "black";</code></pre>
+
+          <p><strong>Com jQuery:</strong></p>
+          <pre><code>$('#teste2').css("background", "black");</code></pre>
+        </article>
+
+        <!-- article Angular -->
+        <article id="angularjs">
+          <h1>AngularJs</h1>
+          <figure>
+            <img
+              src="assets/images/AngularJS_logo.svg.png"
+              width="300"
+              alt="Logo do Framework AngularJS"
+            />
+          </figure>
+          <p>
+            <strong>AngularJS</strong> é um framework JavaScript de código
+            aberto mantido pelo Google, criado para facilitar o desenvolvimento
+            de <em>single-page applications</em> (SPAs).
+          </p>
+          <p>
+            Ele segue o padrão <strong>Model-View-ViewModel (MVVM)</strong> e
+            foi desenvolvido com foco na separação de responsabilidades,
+            facilitando testes e manutenção.
+          </p>
+          <p>
+            O AngularJS lê o HTML com atributos especiais e executa diretivas
+            que conectam a interface com dados do modelo (JavaScript), usando
+            recursos como <code>JSON</code>, seja estático ou dinâmico.
+          </p>
+
+          <h2 id="filo-angularjs">Filosofia do Angular</h2>
+          <p>
+            O AngularJS adota a ideia de que a
+            <strong>programação declarativa</strong> é ideal para a construção
+            de interfaces e a <strong>programação imperativa</strong> é melhor
+            para lógica de negócios.
+          </p>
+          <p>
+            Com seu <strong>data-binding bidirecional</strong>, ele sincroniza
+            automaticamente <code>models</code> e <code>views</code>, abstraindo
+            o acesso ao DOM e facilitando os testes.
+          </p>
+
+          <h2 id="obj-angularjs">Objetivos do AngularJS</h2>
+          <ul>
+            <li>
+              Abstrair o DOM da lógica do aplicativo para facilitar testes.
+            </li>
+            <li>Enfatizar a importância dos testes no desenvolvimento.</li>
+            <li>
+              Separar o cliente do servidor para permitir evolução independente.
+            </li>
+            <li>
+              Guiar o desenvolvedor desde o design da interface até os testes.
+            </li>
+            <li>Reduzir o peso do backend trazendo lógica para o cliente.</li>
+          </ul>
+          <p>
+            Angular segue o padrão <strong>MVC</strong> e aplica
+            <strong>injeção de dependência</strong> para trazer funcionalidades
+            típicas do backend para o frontend.
+          </p>
+
+          <h2 id="angu-boots">AngularJS Bootstrapper</h2>
+          <p>
+            Após o carregamento do DOM, o Angular passa por 3 fases principais:
+          </p>
+          <ol>
+            <li><strong>Injeção:</strong> Criação de um novo injetor.</li>
+            <li>
+              <strong>Compilação:</strong> Busca diretivas no DOM, como
+              <code>ng-app</code>.
+            </li>
+            <li>
+              <strong>Link:</strong> Conecta as diretivas ao escopo
+              (data-binding).
+            </li>
+          </ol>
+
+          <h2 id="princi-diret-angularjs">Principais Diretivas do AngularJS</h2>
+          <p>
+            As diretivas são atributos especiais que estendem o HTML com
+            funcionalidades Angular:
+          </p>
+          <ul>
+            <li>
+              <code>ng-app</code> – Define o elemento raiz da aplicação
+              AngularJS.
+            </li>
+            <li>
+              <code>ng-bind</code> – Atualiza o texto de um elemento com o valor
+              do modelo.
+            </li>
+            <li>
+              <code>ng-model</code> – Cria ligação bidirecional entre modelo e
+              view.
+            </li>
+            <li>
+              <code>ng-class</code> – Atribui classes dinamicamente a um
+              elemento.
+            </li>
+            <li>
+              <code>ng-click</code> – Executa uma função ao clicar no elemento.
+            </li>
+            <li>
+              <code>ng-controller</code> – Define um controller AngularJS para
+              um bloco de HTML.
+            </li>
+            <li>
+              <code>ng-repeat</code> – Repete um elemento para cada item de um
+              array.
+            </li>
+            <li>
+              <code>ng-show</code> e <code>ng-hide</code> – Exibe ou oculta um
+              elemento com base em uma expressão.
+            </li>
+            <li>
+              <code>ng-switch</code> – Controla a renderização com base em
+              condições (similar ao switch).
+            </li>
+            <li>
+              <code>ng-view</code> – Diretiva principal para rotas em SPAs com
+              AngularJS.
+            </li>
+            <li>
+              <code>ng-if</code> – Renderiza um elemento somente se a condição
+              for verdadeira.
+            </li>
+          </ul>
+        </article>
+
+        <!-- article angular -->
+        <article id="angular">
+          <h1>Angular (framework)</h1>
+
+          <p>
+            Angular (comumente referido como "Angular 2+" ou "Angular 2") é uma
+            plataforma de aplicações web de código-fonte aberto e front-end
+            baseado em TypeScript liderado pela Equipe Angular do Google e por
+            uma comunidade de indivíduos e corporações. Angular é uma reescrita
+            completa do AngularJS, feito pela mesma equipe que o construiu.
+          </p>
+
+          <h2>Diferenças entre Angular e AngularJS</h2>
+          <ul>
+            <li>
+              Sem <code>$scope</code> ou controladores — usa
+              <strong>componentes</strong>.
+            </li>
+            <li>
+              Sintaxe de binding diferente: <code>[ ]</code> para propriedade,
+              <code>( )</code> para eventos.
+            </li>
+            <li>
+              Modularidade aprimorada — funcionalidades separadas por módulos.
+            </li>
+            <li>
+              Escrito com <strong>TypeScript</strong>, que oferece:
+              <ul>
+                <li>Tipagem estática</li>
+                <li>Programação orientada a objetos</li>
+                <li>Compatibilidade com ES6 e ES5</li>
+              </ul>
+            </li>
+            <li>Suporte a programação reativa com <strong>RxJS</strong>.</li>
+          </ul>
+
+          <h2 id="compon-diret-angular">Componentes e Diretivas</h2>
+          <p>
+            Angular substituiu controladores por componentes. Um componente é
+            uma diretiva com um template associado, permitindo maior
+            reusabilidade e organização.
+          </p>
+
+          <h2 id="hist-ver-angular">História e Versões</h2>
+          <ul>
+            <li>
+              <strong>Angular 2.0</strong>: Anunciado em 2014, lançado em 2016.
+            </li>
+            <li>
+              <strong>Angular 4</strong>: Lançado em março de 2017 (pularam o
+              3).
+            </li>
+            <li>
+              <strong>Angular 5</strong>: Suporte a PWA e melhorias no Material
+              Design (nov. 2017).
+            </li>
+            <li>
+              <strong>Angular 6</strong>: Foco em CLI e Angular Elements (maio
+              2018).
+            </li>
+            <li>
+              <strong>Angular 7</strong>: Rolagem virtual, melhorias de
+              performance (out. 2018).
+            </li>
+            <li>
+              <strong>Angular 8</strong>: Lazy loading com nova sintaxe, Ivy
+              preview (maio 2019).
+            </li>
+            <li>
+              <strong>Angular 9</strong>: Ivy ativado por padrão, melhorias no
+              bundle e debug (fev. 2020).
+            </li>
+            <li>
+              <strong>Angular 10</strong>: Novas configurações de importação,
+              compat. com TypeScript 3.9 (jun. 2020).
+            </li>
+            <li>
+              <strong>Angular 11</strong>: Suporte a webpack 5, melhorias em
+              testes e build (nov. 2020).
+            </li>
+            <li>
+              <strong>Angular 12</strong>: Atualizações de linguagem e suporte
+              moderno (maio 2021).
+            </li>
+            <li>
+              <strong>Angular 17</strong>: Novo builder com Vite/ESBuild, SSR
+              aprimorado, nova documentação (nov. 2023).
+            </li>
+          </ul>
+
+          <h2 id="recursos-angular">Recursos em Destaque</h2>
+          <ul>
+            <li>
+              <strong>HttpClient:</strong> Serviço moderno para requisições
+              HTTP.
+            </li>
+            <li>
+              <strong>CLI (Command Line Interface):</strong> Ferramentas de
+              linha de comando para scaffolding, builds e testes.
+            </li>
+            <li>
+              <strong>Ivy:</strong> Compilador que melhora performance,
+              depuração e tamanho do bundle.
+            </li>
+            <li>
+              <strong>Angular Universal:</strong> Suporte para renderização do
+              lado servidor (SSR).
+            </li>
+            <li>
+              <strong>Angular Material:</strong> Componentes visuais seguindo as
+              diretrizes do Google Material Design.
+            </li>
+          </ul>
+        </article>
+      </section>
+
+      <aside class="anchors">
+        <h2>Neste Artigo</h2>
+        <ul></ul>
+      </aside>
+    </main>
+
+    <!-- script conteúdo -->
+    <script src="assets/JS/script.js"></script>
+
+    <!-- Prism.js Core -->
+    <script src="https://cdn.jsdelivr.net/npm/prismjs/prism.js"></script>
+
+    <!-- Linguagem JavaScript -->
+    <script src="https://cdn.jsdelivr.net/npm/prismjs/components/prism-javascript.min.js"></script>
+
+    <!-- Linguagem HTML/XML -->
+    <script src="https://cdn.jsdelivr.net/npm/prismjs/components/prism-markup.min.js"></script>
+
+    <!-- Plugin para números de linha -->
+    <script src="https://cdn.jsdelivr.net/npm/prismjs/plugins/line-numbers/prism-line-numbers.min.js"></script>
+  </body>
+</html>

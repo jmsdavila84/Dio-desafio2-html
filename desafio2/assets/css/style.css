@@ -1,0 +1,205 @@
+body,
+html {
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  margin: 0;
+  padding: 0;
+}
+
+/* ===== Titles ===== */
+h1 {
+  font-size: 1.8rem; /* 40px */
+  font-weight: 600;
+  margin-top: 2rem;
+  margin-bottom: 1rem;
+  color: #1a1a1a;
+  border-bottom: 2px solid #cfcfcf;
+  padding-bottom: 0.5rem;
+}
+
+.title-cursive {
+  font-style: italic;
+}
+h2 {
+  font-size: 1.2rem; /* 28px */
+  font-weight: 600;
+  margin-top: 2rem;
+  margin-bottom: 1rem;
+  color: #2c3e50;
+  border-left: 5px solid #5733ea;
+  padding-left: 5px;
+}
+
+/* no style borderless */
+h2.borderless {
+  border-left: none;
+  padding-left: 0; /* remove o espaço extra da borda */
+}
+
+h3 {
+  font-size: 0.9rem; /* 20px */
+  font-weight: 700;
+  margin-top: 1.5rem;
+  margin-bottom: 0.75rem;
+  color: #34495e;
+}
+.bar {
+  background-color: #f9f9fb;
+  padding: 8px;
+  border-top: solid 1px #cdcdcd;
+  border-bottom: solid 1px #cdcdcd;
+}
+.logo {
+  margin-left: 10px;
+  margin-top: 40px;
+}
+
+.logo img {
+  width: 100px;
+}
+
+.content {
+  display: grid;
+  grid-template-areas: "sidebar main anchors";
+  grid-template-columns: 18rem 1fr 18rem;
+  gap: 2rem;
+  max-width: 100%;
+  margin: 0 auto;
+  padding: 0;
+  align-items: start;
+  min-height: 100%;
+}
+
+/* Sidebar (esquerda) */
+.sidebar {
+  grid-area: sidebar;
+  background-color: #f5f5f5;
+  padding: 2rem 1rem;
+  box-sizing: border-box;
+  height: 100%;
+  overflow-wrap: break-word;
+}
+
+/* principal content */
+.main {
+  grid-area: main;
+  padding: 2rem;
+  overflow-wrap: break-word;
+}
+
+/* Anchors (direita) */
+.anchors {
+  grid-area: anchors;
+  background-color: #f5f5f5;
+  padding: 2rem 1rem;
+  box-sizing: border-box;
+  height: 100%;
+  overflow-wrap: break-word;
+  font-size: 14px;
+}
+
+/* 📐 Ajuste para telas de notebook menores */
+@media (max-width: 1366px) {
+  .content {
+    grid-template-columns: 15rem 1fr 15rem;
+    gap: 1rem;
+  }
+
+  .sidebar,
+  .anchors {
+    padding: 1rem;
+  }
+
+  .main {
+    padding: 1rem;
+  }
+}
+
+/* 📱 Layout empilhado para telas pequenas (tablet/celular) */
+@media (max-width: 768px) {
+  .content {
+    grid-template-areas:
+      "sidebar"
+      "main"
+      "anchors";
+    grid-template-columns: 1fr;
+  }
+
+  .sidebar,
+  .main,
+  .anchors {
+    width: 100%;
+    padding: 1rem;
+  }
+}
+
+/* Links */
+
+ul {
+  list-style: none;
+  padding-left: 5px;
+}
+.sidebar a,
+.anchors a {
+  display: block;
+  margin-bottom: 0.5rem;
+  color: #5733ea;
+  text-decoration: none;
+  transition: all 0.2s ease-in-out;
+}
+
+.sidebar a:hover,
+.anchors a:hover {
+  /* text-decoration: underline; */
+  font-weight: bold;
+}
+
+/*  sem estilo */
+h2.borderless {
+  border-left: none;
+  padding-left: 0; /* remove o espaço extra da borda */
+}
+
+.horizontal-rule {
+  border-bottom: 2px solid #5733ea;
+}
+
+figure {
+  text-align: center;
+  padding-bottom: 2rem;
+}
+
+/* Table tags */
+table {
+  width: 100%;
+  border-collapse: collapse;
+  margin: 0 auto;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+th,
+td {
+  border: 1px solid #ccc;
+  padding: 8px 10px;
+  text-align: left;
+}
+
+th {
+  background-color: #f2f2f2;
+  font-weight: bold;
+}
+
+code {
+  padding: 2px 6px;
+  border-radius: 4px;
+  font-family: "Courier New", monospace;
+}
+
+.border-code {
+  border: 1px solid #ccc;
+  background-color: #f9f9f9;
+  padding: 2px 6px;
+}
+
+pre[tabindex="0"] {
+  outline: none;
+}
